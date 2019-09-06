@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import {
   MatButtonModule,
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatTableModule,
+  MatToolbarModule,
+  MatSortModule,
+  MatPaginatorModule,
+  MatInputModule
 } from '@angular/material';
 
 // Add all the Angular Material components you wish to import here.
@@ -9,6 +14,11 @@ import {
 const matImportsExports = [
   MatButtonModule,
   MatSnackBarModule,
+  MatTableModule,
+  MatToolbarModule,
+  MatSortModule,
+  MatPaginatorModule,
+  MatInputModule
 ];
 
 // Declare the Material Module
