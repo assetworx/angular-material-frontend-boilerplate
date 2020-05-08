@@ -118,9 +118,9 @@
     rxjs "6.5.3"
 
 "@angular/animations@^9.0.1":
-  version "9.1.4"
-  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-9.1.4.tgz#22f64a062103d4903f2c7d862889a88fc6553bc7"
-  integrity sha512-gMo/DbCm5BDArladMAeC7/75T2DvhLr4CSUGJt/P/aimTEG2ywoAALs3pzwSSe4qxrHiR0OIksVW3l4km3iXEw==
+  version "9.1.5"
+  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-9.1.5.tgz#d1acb712c22a14369cf7b0501d393f50134a7431"
+  integrity sha512-kVyoA7yqXtmFzB1w0jzEaDfFJEa4J/z5AdFPyNpm1ojtKUmG2L3FE37nvrWhjl1Utkq1KzpcGEyKVpWvzCRdaA==
 
 "@angular/cdk@^9.0.0":
   version "9.2.2"
