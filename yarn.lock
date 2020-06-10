@@ -118,9 +118,9 @@
     rxjs "6.5.3"
 
 "@angular/animations@^9.0.1":
-  version "9.1.9"
-  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-9.1.9.tgz#de54334ea195189402487855c9a98f5618605da4"
-  integrity sha512-qWVi0TxmU6HeXAgEsfpQvFFygh+a0kH2kGe6bWij4XvG6dWfV3xZjlaFwSIYGk+yK4yL0+9+PAXH+ENfxNw+Cw==
+  version "9.1.10"
+  resolved "https://registry.yarnpkg.com/@angular/animations/-/animations-9.1.10.tgz#c0f0b7e30dbe95ef8edd62e5d6c2ea3224d76966"
+  integrity sha512-xuiL2iE8vka3IZpvwnOYDhfKKn9xKB+qyn7mcWzr6xnFP3UPfxN/1HuDJYgtwd+KXtTZmzlsm8orh+DZ3MGxbA==
 
 "@angular/cdk@^9.0.0":
   version "9.2.4"
@@ -983,14 +983,14 @@
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
 
 "@types/node@*":
-  version "14.0.12"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.12.tgz#9c1d8ffb8084e8936603a6122a7649e40e68e04b"
-  integrity sha512-/sjzehvjkkpvLpYtN6/2dv5kg41otMGuHQUt9T2aiAuIfleCQRQHXXzF1eAw/qkZTj5Kcf4JSTf7EIizHocy6Q==
+  version "14.0.13"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.0.13.tgz#ee1128e881b874c371374c1f72201893616417c9"
+  integrity sha512-rouEWBImiRaSJsVA+ITTFM6ZxibuAlTuNOCyxVbwreu6k6+ujs7DfnU9o+PShFhET78pMBl3eH+AGSI5eOTkPA==
 
 "@types/node@^12.11.1":
-  version "12.12.46"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.46.tgz#0eddad05e804cfb67472f09e2ce3af8bf40df246"
-  integrity sha512-CnBSlOd7ASSHx1kJ2kNmzevfA0vuDNrrek6J+3tsmE+p0cRToFvD1pCpQ5+ynZlgPV2MGBzLKsD1bUS+h9B/qA==
+  version "12.12.47"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.47.tgz#5007b8866a2f9150de82335ca7e24dd1d59bdfb5"
+  integrity sha512-yzBInQFhdY8kaZmqoL2+3U5dSTMrKaYcb561VU+lDzAYvqt+2lojvBEy+hmpSNuXnPTx7m9+04CzWYOUqWME2A==
 
 "@types/q@^0.0.32":
   version "0.0.32"
