@@ -986,14 +986,14 @@
   integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
 
 "@types/node@*":
-  version "14.14.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.0.tgz#f1091b6ad5de18e8e91bdbd43ec63f13de372538"
-  integrity sha512-BfbIHP9IapdupGhq/hc+jT5dyiBVZ2DdeC5WwJWQWDb0GijQlzUFAeIQn/2GtvZcd2HVUU7An8felIICFTC2qg==
+  version "14.14.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.1.tgz#b8d6e8a84b119ae51fd0593c71eb3a9dd31fea4e"
+  integrity sha512-D2/Xwp9c49JhIWq7SIrdvoYyGdq6yXkr5FTldN4rus9XljYFBul6P2epAID8xepOpL4ffcx09C05FZGK/1AIkw==
 
 "@types/node@^12.11.1":
-  version "12.12.69"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.69.tgz#7cb6a3aa0d16664bf2dcd1450ccb8477464fbd79"
-  integrity sha512-2F2VQRSFmzqgUEXw75L51MgnnZqc6bKWVSUPfrDPzp6mzGGibeVwyQcpvZvBr5RnsoMRHmC8EcBQiobSeqeJxg==
+  version "12.12.70"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.70.tgz#adf70b179c3ee17620215ee4cb5c68c95f7c37ec"
+  integrity sha512-i5y7HTbvhonZQE+GnUM2rz1Bi8QkzxdQmEv1LKOv4nWyaQk/gdeiTApuQR3PDJHX7WomAbpx2wlWSEpxXGZ/UQ==
 
 "@types/q@^0.0.32":
   version "0.0.32"
