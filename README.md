@@ -1,4 +1,4 @@
-![](./readme-assets/logo.jpg | width=250)
+<img src="./readme-assets/logo.jpg" width="250">
 
 # GSWRX Angular Material Boilerplate
 
