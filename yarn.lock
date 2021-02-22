@@ -4832,9 +4832,9 @@ is-typedarray@~1.0.0:
   integrity sha1-5HnICFjfDBsR3dppQPlgEfzaSpo=
 
 is-what@^3.12.0:
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/is-what/-/is-what-3.13.0.tgz#4a2e207513eec14d97c0f5375f22e0e9b0f18131"
-  integrity sha512-qYTOcdAo0H0tvMTl9ZhsjpEZH5Q07JDVrPnFMAQgBM0UctGqVsKE7LgZPNZEFPw1EhUkpaBL/BKnRgVX7CoMTw==
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/is-what/-/is-what-3.14.0.tgz#3de924fbcae79746729f10e15e0c081a3c14ee98"
+  integrity sha512-iOkGuk/Wp2UNh5fzNsuvcCYEIGeuB3DdT3fcuwOgpB/27gQMLZnEqjSPMAq6jsms/+bujXR53Lajl1HdHNjzsQ==
 
 is-windows@^1.0.2:
   version "1.0.2"
