@@ -251,9 +251,9 @@
     "@babel/highlight" "^7.12.13"
 
 "@babel/compat-data@^7.11.0", "@babel/compat-data@^7.13.0":
-  version "7.13.0"
-  resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.13.0.tgz#7889eb7ee6518e2afa5d312b15fd7fd1fe9f3744"
-  integrity sha512-mKgFbYQ+23pjwNGBNPNWrBfa3g/EcmrPnwQpjWoNxq9xYf+M8wcLhMlz/wkWimLjzNzGnl3D+C2186gMzk0VuA==
+  version "7.13.6"
+  resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.13.6.tgz#11972d07db4c2317afdbf41d6feb3a730301ef4e"
+  integrity sha512-VhgqKOWYVm7lQXlvbJnWOzwfAQATd2nV52koT0HZ/LdDH0m4DUDwkKYsH+IwpXb+bKPyBJzawA4I6nBKqZcpQw==
 
 "@babel/core@7.11.1":
   version "7.11.1"
@@ -517,9 +517,9 @@
   integrity sha512-uvoOulWHhI+0+1f9L4BoozY7U5cIkZ9PgJqvb041d6vypgUmtVPG4vmGm4pSggjl8BELzvHyUeJSUyEMY6b+qA==
 
 "@babel/plugin-proposal-async-generator-functions@^7.10.4":
-  version "7.13.0"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-async-generator-functions/-/plugin-proposal-async-generator-functions-7.13.0.tgz#42f4a4922c973ceb70bfd4708daf55601fe25434"
-  integrity sha512-3Loqr0+jE2/yqp29VnW1YqcWjGnIQwICotlrMfn6+1Ih2MBIbaaIFpJ5fnmYmGSUa9vwMhHOh2rMAqUH7NMWmQ==
+  version "7.13.5"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-async-generator-functions/-/plugin-proposal-async-generator-functions-7.13.5.tgz#69e3fbb9958949b09036e27b26eba1aafa1ba3db"
+  integrity sha512-8cErJEDzhZgNKzYyjCKsHuyPqtWxG8gc9h4OFSUDJu0vCAOsObPU2LcECnW0kJwh/b+uUz46lObVzIXw0fzAbA==
   dependencies:
     "@babel/helper-plugin-utils" "^7.13.0"
     "@babel/helper-remap-async-to-generator" "^7.13.0"
@@ -1058,9 +1058,9 @@
     regenerator-runtime "^0.13.4"
 
 "@babel/runtime@^7.8.4":
-  version "7.13.4"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.4.tgz#a2f5b5304d6f98a94053e6737321501347325617"
-  integrity sha512-pZLFG10nRL1hPF9J0/WdxjVuLEanSge8W3Ct+Kls9fNhD4vOi9bhuAU8DdNARvBE9GTg6UhQFcEIF1XhIZd9ZA==
+  version "7.13.6"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.6.tgz#86e0fad6cbb46a680e21c1aa4748717a058d345a"
+  integrity sha512-Y/DEVhSQ91u27rxq7D0EH/sewS6+x06p/MgO1VppbDHMzYXLZrAR5cFjCom78e9RUw1BQAq6qJg6fXc/ep7glA==
   dependencies:
     regenerator-runtime "^0.13.4"
 
