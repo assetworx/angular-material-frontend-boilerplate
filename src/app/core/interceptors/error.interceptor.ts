@@ -15,6 +15,8 @@ export class ErrorInterceptor implements HttpInterceptor {
   constructor(private authService: AuthService) {}
 
   /**
+   * Intercepts each http response and performs the following steps:
+   * 
    * 1. 401 -> Logout
    * 2. Other -> Retry 3 times
    *
