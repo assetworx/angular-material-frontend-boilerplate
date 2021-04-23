@@ -4,13 +4,15 @@ import { Router } from '@angular/router';
 import { shareReplay, tap } from 'rxjs/operators';
 import jwt_decode from "jwt-decode";
 import { environment } from '../../../environments/environment';
-import * as dayjs from 'dayjs'
+import * as dayjs from 'dayjs';
+import { MatSnackBar } from '@angular/material/snack-bar';
+
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(private http: HttpClient, private router: Router, private snackBar: MatSnackBar) { }
 
   /**
    * Login as an user
@@ -25,7 +27,8 @@ export class AuthService {
     return this.http.post<any>(url, {email, password})
       .pipe(
         tap(res => this._setSession(res)),
-        shareReplay()
+        shareReplay(),
+        tap(res => this.snackBar.open('Succesfully logged in!'))
       )
   }
 
@@ -37,7 +40,8 @@ export class AuthService {
    */
    logout() {
     localStorage.clear()
-    this.router.navigate(['login'])
+    this.router.navigate(['users/login'])
+    this.snackBar.open('Succesfully logged out!')
   }
 
 
@@ -54,7 +58,8 @@ export class AuthService {
     return this.http.post<any>(url, {email, password})
       .pipe(
         tap(res => this._setSession(res)),
-        shareReplay()
+        shareReplay(),
+        tap(res => this.snackBar.open('Succesfully logged registered!'))
       )
   }
 
@@ -68,9 +73,14 @@ export class AuthService {
    * @memberof AuthService
    */
   private _setSession(auth: any): void {
-    const decoded: any = jwt_decode(auth)
-    localStorage.setItem('id_token', auth);
-    localStorage.setItem("expires_at", decoded?.exp);
+    localStorage.setItem('id_token', JSON.stringify(auth));
+    localStorage.setItem("expires_at", dayjs().add(1, 'week').unix().toString()); // REMOVE IN REAL SCENARIO
+    try {
+      const decoded: any = jwt_decode(auth)
+      localStorage.setItem("expires_at", decoded?.exp);
+    } catch(err) {
+      this.logout
+    }
   }
 
 

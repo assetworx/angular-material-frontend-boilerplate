@@ -1,0 +1,25 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Sign in</mat-card-title>
+        <mat-card-subtitle >Use your Assetworx Account</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="loginForm">
+            <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input type="email" formControlName="email" autocomplete="email" matInput email>
+            </mat-form-field>
+            <mat-form-field appearance="fill" (keydown.enter)="login()">
+                <mat-label>Password</mat-label>
+                <input type="password" autocomplete="current-password" formControlName="password" matInput>
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions align="end">
+        <button mat-flat-button class="register-btn" [routerLink]="['/users/register']">Register</button>
+        <button class="login-btn" (click)="login()" [disabled]="isLoading || !loginForm.valid" mat-flat-button color="accent">
+            <ng-container *ngIf="!isLoading">Login</ng-container>
+            <mat-spinner *ngIf="isLoading" diameter="25"></mat-spinner>
+        </button>
+    </mat-card-actions>
+</mat-card>

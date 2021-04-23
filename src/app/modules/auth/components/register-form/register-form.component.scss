@@ -1,0 +1,48 @@
+mat-card {
+    margin-top:75px;
+    mat-card-header {
+        justify-content: center; 
+        margin-top:10px;
+        mat-card-subtitle {
+            text-align: center; 
+            font-size:15px
+        }
+        mat-card-title {
+            text-align: center; 
+            font-size:30px; 
+            margin-bottom:20px;
+        }
+    }   
+ mat-card-content {
+    margin-bottom:0px;
+     mat-form-field {
+        width:100%
+     }
+ }
+}
+mat-card-actions {
+    padding-bottom:10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    .register-btn {
+        color:var(--accent-color); 
+        margin-right:auto
+    }
+
+    .login-btn {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        width:85px
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    mat-card {
+        width:95vw;
+        padding:16px 0;
+        mat-card-content, mat-card-actions {
+            padding:0 16px;
+        }
+    }
+  }

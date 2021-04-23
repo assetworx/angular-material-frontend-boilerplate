@@ -1,0 +1,31 @@
+<mat-card >
+    <mat-card-header >
+        <mat-card-title>Register</mat-card-title>
+        <mat-card-subtitle>Create your Assetworx Account</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="registerForm">
+            <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input type="email" formControlName="email" autocomplete="email" matInput email>
+            </mat-form-field>
+            <mat-form-field  appearance="fill">
+                <mat-label>Password</mat-label>
+                <input type="password" autocomplete="new-password" formControlName="password" matInput>
+            </mat-form-field>
+            <mat-form-field appearance="fill" (keydown.enter)="register()">
+                <mat-label>Confirm password</mat-label>
+                <input type="password" autocomplete="new-password" formControlName="confirmpassword" matInput [errorStateMatcher]="matcher">
+                <mat-error *ngIf="registerForm.hasError('notSame')">Password does not match!</mat-error>
+            </mat-form-field>
+        </form>
+        
+    </mat-card-content>
+    <mat-card-actions align="end">
+        <button mat-flat-button [routerLink]="['/']" class="register-btn" >Login</button>
+        <button class="login-btn" (click)="register()" [disabled]="isLoading || !registerForm.valid" mat-flat-button color="accent">
+            <ng-container *ngIf="!isLoading">Register</ng-container>
+            <mat-spinner *ngIf="isLoading" diameter="25"></mat-spinner>
+        </button>
+    </mat-card-actions>
+</mat-card>
