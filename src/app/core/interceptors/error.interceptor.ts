@@ -5,8 +5,8 @@ import {
   HttpEvent,
   HttpInterceptor
 } from '@angular/common/http';
-import { Observable, throwError } from 'rxjs';
-import { retryWhen, delay, take, catchError } from 'rxjs/operators';
+import { Observable, throwError, timer } from 'rxjs';
+import { retryWhen, mergeMap } from 'rxjs/operators';
 import { AuthService } from '../services/auth.service';
 
 @Injectable()
@@ -27,17 +27,38 @@ export class ErrorInterceptor implements HttpInterceptor {
    */
   intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
     return next.handle(request).pipe(
-      retryWhen(errors => errors.pipe(
-        delay(1000),
-        take(3),
-        catchError(err => {
-          if (err.status === 401) {
-            this.authService.logout();
-            return throwError('Token invalid!');
-          }
-          return throwError(err);
-        })
-      ))
-    );
+      retryWhen(
+        genericRetryStrategy({excludedStatusCodes: [401]}, this.authService)
+      )
+    )
   }
 }
+
+
+export const genericRetryStrategy = ({
+  maxRetryAttempts = 3,
+  scalingDuration = 1000,
+  excludedStatusCodes = []
+}: {
+  maxRetryAttempts?: number,
+  scalingDuration?: number,
+  excludedStatusCodes?: number[],
+} = {}, authService: AuthService) => (attempts: Observable<any>) => {
+  return attempts.pipe(
+    mergeMap((error, i) => {
+      const retryAttempt = i + 1;
+      // If unauthorized
+      if (excludedStatusCodes.find(e => e === error.status)) {
+        authService.logout()
+      }
+
+      // If we capped on retry attempts
+      if (retryAttempt > maxRetryAttempts) {
+        return throwError(error);
+      }
+
+      // retry after 1s, 2s, etc...
+      return timer(retryAttempt * scalingDuration);
+    })
+  );
+};
